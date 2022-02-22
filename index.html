@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="./assets/css/style.css" />
         <meta charset="UTF-8" />
         <title>Run Buddy</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        
     </head>
     <body>
-
         <!-- navigation -->
         <header>
         <h1>
@@ -57,7 +57,7 @@
                     <label for="checkbox" >
                         I acknowledge that I am at least 18 years of age.
                     </label>
-                    <input type="checkbox" name="age-confirm" id="checkbox" />
+                    <input type="checkbox" name="checkpoint1" id="checkbox" />
                 </p>
                 <button type="submit">
                     Get running!
@@ -105,9 +105,41 @@
        </section>
 
        <!--"meet the trainers" section-->
-       <section>
-           <h2>Meet The Trainers</h2>
-       </section>
+       <section id="your-trainers" class="trainers">
+           <h2 class="section-title primary-border">Meet The Trainers</h2>
+                <article class="trainer">
+                    <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
+                    <div class="trainer-bio text-left">
+                        <h3>Arron Stephens</h3>
+                        <h4>Speed / Strength</h4>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A enim nemo autem eius culpa blanditiis quos odio quae! Sequi accusantium a aliquid cumque, expedita veniam. Distinctio placeat veritatis nihil harum!
+                        </p>
+                    </div>
+                </article>
+                <!--second trainer bio-->
+                <article class="trainer">
+                    <div class="trainer-bio text-right">
+                        <h3>Joanna Gill</h3>
+                        <h4>Endurance</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quia exercitationem itaque? Quidem eius laboriosam vitae est, necessitatibus natus deserunt dicta saepe, aut illum pariatur. Facilis possimus rerum repudiandae minima!
+                        </p>
+                    </div>
+                    <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout" />
+                </article>
+                <!--third trainer bio-->
+                <article class="trainer">
+                    <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" />
+                    <div class="trainer-bio text-left">
+                        <h3>Harry "the Headband" Smith</h3>
+                        <h4>Strength</h4>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad quis sunt a inventore exercitationem. Et repellat molestiae placeat enim optio dolore sed quae, earum suscipit eligendi eum assumenda perspiciatis esse?
+                        </p>
+                    </div>
+                </article>
+        </section>
 
        <!--"reach out" section-->
        <section>
