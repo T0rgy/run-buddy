@@ -174,7 +174,7 @@ section {
 }
 
 .step-img img {
-    max-width: ;
+    max-width: 100%;
 }
 .step-text {
     flex: 12;
