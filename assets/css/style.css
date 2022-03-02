@@ -43,7 +43,7 @@ header nav ul {
 }
 
 header nav ul li a {
-    padding: 10px 15px
+    padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
 }
@@ -88,18 +88,18 @@ section {
 }
 
 .hero-cta {
-    width: 35%;
-    text-align: right;
+    text-align: center;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
     line-height: 1.2;
 }
 
-.hero-cta h2 {
+.hero-cta h1 {
     font-style: italic;
     font-size: 55px;
     color: #fce138;
+    text-align: center;
 }
 
 .hero-form {
@@ -107,7 +107,6 @@ section {
     padding: 20px;
     color: #024e76;
     border: solid 3px #024e76;
-    width: 40%;
     margin: 3.5%;
 }
 
@@ -344,17 +343,110 @@ section {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
 
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .secondary-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info iframe {
+        flex: 1 100%;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
 
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+    }
   }
   
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-
+    .hero-from button {
+        width: 100%;
     }
-  }
+
+    .secondary-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%
+    }
+
+    .trainer {
+        flex: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
+    }
+  
     
